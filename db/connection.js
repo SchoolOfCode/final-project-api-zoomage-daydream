@@ -1,6 +1,8 @@
 import pg from "pg";
 
 import { connectionString } from "../config.js";
+console.log(process.env.muu)
+
 
 const pool = new pg.Pool({
   connectionString,
@@ -10,3 +12,4 @@ const pool = new pg.Pool({
 });
 
 export default pool;
+
