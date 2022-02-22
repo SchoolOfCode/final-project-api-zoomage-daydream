@@ -11,6 +11,7 @@ import spacesRouter from "./routes/spaces.js";
 
 const app = express();
 
+import cloudinary from "cloudinary";
 app.use(logger("dev"));
 app.use(cors());
 app.use(express.json());

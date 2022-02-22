@@ -20,3 +20,34 @@ export async function getSpaceBySearch(location, fromdate, todate, type) {
   );
   return result.rows;
 }
+
+// Add property details to spaces table
+export async function addSpace(
+  address,
+  type,
+  purpose,
+  fraction,
+  amenities,
+  additionalInfo,
+  fromDate,
+  toDate,
+  images,
+  price
+) {
+  const result = await db.query(
+    `INSERT INTO spaces (address, type_of_space, purpose_of_space, fraction_of_space, amenities, additional_information, fromDate, toDate, images, hourly_price) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);`,
+    [
+      address,
+      type,
+      purpose,
+      fraction,
+      amenities,
+      additionalInfo,
+      fromDate,
+      toDate,
+      images,
+      price,
+    ]
+  );
+  return result.rows;
+}

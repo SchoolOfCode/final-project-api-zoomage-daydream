@@ -27,6 +27,7 @@ export const spaces = [
       "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
+    hourly_price: 20.0,
   },
   {
     address: "11 Nowhere Road, Birmingham, UK",
@@ -41,5 +42,6 @@ export const spaces = [
       "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
+    hourly_price: 30.0,
   },
 ];
