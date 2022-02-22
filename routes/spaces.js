@@ -57,38 +57,35 @@ export default router;
 router.post("/", async function (req, res, next) {
   const {
     address,
-    type,
-    purpose,
-    fraction,
+    type_of_space,
+    purpose_of_space,
+    fraction_of_space,
     amenities,
-    additionalInfo,
+    additional_information,
     fromDate,
     toDate,
     images,
-    price,
+    hourly_price,
   } = req.body;
 
   const imageURL = [];
-  images.forEach(async (image) => {
-    const newURL = await cloudinary.uploader.upload(image);
-    imageURL.push(newURL.secure_url);
-    console.log(imageURL);
-  });
+  for (let i = 0; i < images.length; i++) {
+    const cloudinaryRes = await cloudinary.uploader.upload(images[i]);
+    imageURL.push(cloudinaryRes.secure_url);
+  }
 
-  // const imageURL = await cloudinary.uploader.upload(images);
-  // console.log(await imageURL);
-
+  console.log(imageURL);
   const newSpace = await addSpace(
     address,
-    type,
-    purpose,
-    fraction,
+    type_of_space,
+    purpose_of_space,
+    fraction_of_space,
     amenities,
-    additionalInfo,
+    additional_information,
     fromDate,
     toDate,
-    imageURL.secure_url,
-    price
+    images,
+    hourly_price
   );
 
   res.json({ success: true, payload: newSpace });
