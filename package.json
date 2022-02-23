@@ -11,7 +11,7 @@
     "db:createspaces": "node -r dotenv/config ./db/scripts/spaces/createSpaces.js",
     "db:populatespaces": "node -r dotenv/config ./db/scripts/spaces/populateSpaces.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "cloudinary": "^1.28.1",

@@ -2,11 +2,19 @@ import request from "supertest";
 import app from "../app.js";
 
 const user = {
+<<<<<<< HEAD
   id: expect.any(Number),
   full_name: expect.any(String),
   username: expect.any(String),
   email: expect.any(String),
   date_of_birth: expect.any(String),
+=======
+  full_name: expect.any(String),
+  email: expect.any(String),
+  date_of_birth: expect.any(String),
+  id: expect.any(Number),
+  username: expect.any(String),
+>>>>>>> f5f938d6f578bd452bd88c796f1ffeb260808ced
 };
 
 // tests for the users table
@@ -26,9 +34,44 @@ describe("Get user for the users route works as expected", () => {
     const actual = res.body;
     const expected = {
       success: true,
-      payload: "expect.any(Array)",
+      payload: expect.any(Array),
     };
     // assert
+    // console.log(actual, "is the actual");
     expect(actual).toEqual(expected);
   });
+
+  //  test"Should return the actual payload expected"
+  test("should return the actual payload", async () => {
+    const res = await request(app).get("/users");
+    // arrange
+    const actual = res.body;
+    actual.payload.forEach((item) => {
+      // assert
+      expect(item).toEqual(user);
+    });
+  });
+});
+
+// testing the post request
+test("should post to the users table", async () => {
+  const data = {
+    full_name: "Robert Jones",
+    email: "robertjones@mail.com",
+    date_of_birth: "1955-05-12",
+    username: "BobbyJ",
+  };
+  await request(app)
+    .post("/users")
+    .send(data)
+    .expect(200)
+    .then(async (response) => {
+      // Check the response
+      console.log("the response is", response.body.payload[0]);
+      expect(response.body.payload[0].id).toBeTruthy();
+      expect(response.body.payload[0].full_name).toBe(data.full_name);
+      expect(response.body.payload[0].email).toBe(data.email);
+      expect(response.body.payload[0].date_of_birth).toBe(data.date_of_birth);
+      expect(response.body.payload[0].username).toBe(data.username);
+    });
 });
