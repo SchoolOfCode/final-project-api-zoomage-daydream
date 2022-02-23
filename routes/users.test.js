@@ -2,19 +2,11 @@ import request from "supertest";
 import app from "../app.js";
 
 const user = {
-<<<<<<< HEAD
-  id: expect.any(Number),
-  full_name: expect.any(String),
-  username: expect.any(String),
-  email: expect.any(String),
-  date_of_birth: expect.any(String),
-=======
   full_name: expect.any(String),
   email: expect.any(String),
   date_of_birth: expect.any(String),
   id: expect.any(Number),
   username: expect.any(String),
->>>>>>> f5f938d6f578bd452bd88c796f1ffeb260808ced
 };
 
 // tests for the users table
