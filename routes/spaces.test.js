@@ -1,6 +1,7 @@
 import request from "supertest";
 import app from "../app.js";
 
+// table to be used for testing
 // const space = {
 //   address: expect.any(String),
 //   type_of_space: expect.any(String),
@@ -14,7 +15,7 @@ import app from "../app.js";
 //   hourly_price: expect.any(Number),
 // };
 
-// test for spaces table to make sure it is responding
+// test for the spaces table to make sure it is responding
 describe("Testing that spaces route is working as expected", () => {
   // testing to check if it returns a status code of 200
   test("Should return a status of 200", async () => {
