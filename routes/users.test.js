@@ -59,7 +59,7 @@ test("should post to the users table", async () => {
     .expect(200)
     .then(async (response) => {
       // Check the response
-      console.log("the response is", response.body.payload[0]);
+      // console.log("the response is", response.body.payload[0]);
       expect(response.body.payload[0].id).toBeTruthy();
       expect(response.body.payload[0].full_name).toBe(data.full_name);
       expect(response.body.payload[0].email).toBe(data.email);

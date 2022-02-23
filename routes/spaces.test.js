@@ -50,8 +50,8 @@ describe("Testing that spaces route is working as expected", () => {
       expect(item).toEqual(space);
     });
   });
-  //testing POST request
 });
+//testing POST request
 test("Should POST a space to the spaces table", async () => {
   const data = {
     address: "5 Nowhere Road, London, UK",
@@ -60,27 +60,32 @@ test("Should POST a space to the spaces table", async () => {
     fraction_of_space: "private room",
     amenities: ["shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    fromDate: "2022-02-07T00:00:00.000Z",
-    toDate: "2022-02-18T00:00:00.000Z",
+    fromDate: "2022-02-02",
+    toDate: "2022-02-11",
     images: [
       "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 70000.0,
   };
+
   await request(app)
     .post("/spaces")
     .send(data)
     .expect(200)
     .then(async (response) => {
       //Check the response
+      console.log("this is", response.body);
       expect(response.body.id).toBeTruthy();
+      expect(response.body.userid).toBeTruthy();
       expect(response.body.address).toBe(data.address);
       expect(response.body.type_of_space).toBe(data.type_of_space);
       expect(response.body.purpose_of_space).toBe(data.purpose_of_the_space);
       expect(response.body.fraction_of_space).toBe(data.fraction_of_space);
       expect(response.body.amenities).toEqual(data.amenities);
-      expect(response.body.additional_information).toBe(data.additional_information);
+      expect(response.body.additional_information).toBe(
+        data.additional_information
+      );
       expect(response.body.fromDate).toBe(data.fromDate);
       expect(response.body.toDate).toBe(data.toDate);
       expect(response.body.images).toEqual(data.images);

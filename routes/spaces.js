@@ -74,7 +74,7 @@ router.post("/", async function (req, res, next) {
     imageURL.push(cloudinaryRes.secure_url);
   }
 
-  console.log(imageURL);
+  // console.log(imageURL);
   const newSpace = await addSpace(
     address,
     type_of_space,
