@@ -6,12 +6,15 @@
   "scripts": {
     "start": "node ./bin/www.js",
     "db:deploy": "node ./db/scripts/users/createTable.js && node ./db/scripts/users/populateTable.js",
-    "db:createusers": "node -r dotenv/config ./db/scripts/users/createTable.js",
-    "db:populateusers": "node -r dotenv/config ./db/scripts/users/populateTable.js",
+    "db:createusers": "node -r dotenv/config ./db/scripts/users/createUserTable.js",
+    "db:populateusers": "node -r dotenv/config ./db/scripts/users/populateUserTable.js",
+    "db:createspaces": "node -r dotenv/config ./db/scripts/spaces/createSpaces.js",
+    "db:populatespaces": "node -r dotenv/config ./db/scripts/spaces/populateSpaces.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
+    "cloudinary": "^1.28.1",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
@@ -21,8 +24,8 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
-    "nodemon": "^2.0.15",
     "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
     "supertest": "^6.1.6"
   }
 }
