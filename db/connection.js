@@ -4,9 +4,9 @@ import { connectionString } from "../config.js";
 
 const pool = new pg.Pool({
   connectionString,
-  // ssl: {
-  //   rejectUnauthorized: false,
-  // },
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 export default pool;

@@ -38,12 +38,12 @@ router.get("/:id", async function (req, res, next) {
 });
 // GET space by search
 router.get("/", async function (req, res, next) {
-  const { address, type_of_space, fromDate, toDate } = req.query;
+  const { address, type_of_space, startTime, endTime } = req.query;
   const space = await getSpaceBySearch(
     address,
     type_of_space,
-    fromDate,
-    toDate
+    startTime,
+    endTime
   );
 
   res.json({
@@ -62,8 +62,9 @@ router.post("/", async function (req, res, next) {
     fraction_of_space,
     amenities,
     additional_information,
-    fromDate,
-    toDate,
+    date,
+    startTime,
+    endTime,
     images,
     hourly_price,
   } = req.body;
@@ -82,8 +83,9 @@ router.post("/", async function (req, res, next) {
     fraction_of_space,
     amenities,
     additional_information,
-    fromDate,
-    toDate,
+    date,
+    startTime,
+    endTime,
     images,
     hourly_price
   );

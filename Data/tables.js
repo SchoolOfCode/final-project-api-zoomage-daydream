@@ -21,8 +21,9 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    fromDate: "2022-02-07T00:00:00.000Z",
-    toDate: "2022-02-18T00:00:00.000Z",
+    date: ["2022-02-07T00:00:00.000Z", "2022-02-18T00:00:00.000Z"],
+    startTime: "09:00",
+    endTime: "17:00",
     images: [
       "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -36,8 +37,9 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    fromDate: "2022-02-07T00:00:00.000Z",
-    toDate: "2022-02-18T00:00:00.000Z",
+    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    startTime: "07:00",
+    endTime: "19:00",
     images: [
       "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
