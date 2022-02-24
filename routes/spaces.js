@@ -17,13 +17,28 @@ cloudinary.config({
 });
 
 /* GET all spaces */
-router.get("/", async function (req, res, next) {
-  const spaces = await getAllSpaces();
+router.get("/", async function (req, res) {
+    const { address, type_of_space} = req.query;
+  if(address!==undefined&&type_of_space!==undefined){ 
+    
+     const space = await getSpaceBySearch(
+    address,
+    type_of_space,
+  )
 
+ 
+ res.json({
+    success: true,
+    payload: space,
+  })
+}
+
+else{const spaces = await getAllSpaces();
   res.json({
     success: true,
     payload: spaces,
-  });
+  });}
+  
 });
 // GET spaces by ID
 
@@ -36,22 +51,7 @@ router.get("/:id", async function (req, res, next) {
     payload: space,
   });
 });
-// GET space by search
-router.get("/", async function (req, res, next) {
-  const { address, type_of_space, fromDate, toDate } = req.query;
-  const space = await getSpaceBySearch(
-    address,
-    type_of_space,
-    fromDate,
-    toDate
-  );
 
-  res.json({
-    success: true,
-    payload: space,
-  });
-});
-export default router;
 
 //POST request
 router.post("/", async function (req, res, next) {
@@ -62,8 +62,9 @@ router.post("/", async function (req, res, next) {
     fraction_of_space,
     amenities,
     additional_information,
-    fromDate,
-    toDate,
+    date,
+    startTime,
+    endTime,
     images,
     hourly_price,
   } = req.body;
@@ -74,7 +75,7 @@ router.post("/", async function (req, res, next) {
     imageURL.push(cloudinaryRes.secure_url);
   }
 
-  console.log(imageURL);
+  // console.log(imageURL);
   const newSpace = await addSpace(
     address,
     type_of_space,
@@ -82,11 +83,14 @@ router.post("/", async function (req, res, next) {
     fraction_of_space,
     amenities,
     additional_information,
-    fromDate,
-    toDate,
+    date,
+    startTime,
+    endTime,
     images,
     hourly_price
   );
 
   res.json({ success: true, payload: newSpace });
 });
+
+export default router;

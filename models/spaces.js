@@ -11,12 +11,12 @@ export async function getSpaceByID(id) {
   return result.rows;
 }
 
+
 // More specific search for a space, to be used on the reserve on home page
-export async function getSpaceBySearch(location, fromdate, todate, type) {
+export async function getSpaceBySearch(location,type) {
   const result = await db.query(
-    `SELECT * FROM spaces WHERE address ILIKE '%' || $1 || '%' AND  type_of_space = $2  AND fromdate >= $3 AND
-          toDate <=$4`,
-    [location, type, fromdate, todate]
+    `SELECT * FROM spaces WHERE address ILIKE '%' || $1 || '%' AND  type_of_space = $2`,
+    [location, type]
   );
   return result.rows;
 }
@@ -29,13 +29,17 @@ export async function addSpace(
   fraction_of_space,
   amenities,
   additional_information,
-  fromDate,
-  toDate,
+  date,
+  startTime,
+  endTime,
   images,
   hourly_price
 ) {
+  db.query("SELECT * FROM spaces", function (err, result) {
+    console.log(result);
+  });
   const result = await db.query(
-    `INSERT INTO spaces (address, type_of_space, purpose_of_space, fraction_of_space, amenities, additional_information, fromDate, toDate, images, hourly_price) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *;`,
+    `INSERT INTO spaces (address, type_of_space, purpose_of_space, fraction_of_space, amenities, additional_information, date, startTime, endTime, images, hourly_price) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING *;`,
     [
       address,
       type_of_space,
@@ -43,8 +47,9 @@ export async function addSpace(
       fraction_of_space,
       amenities,
       additional_information,
-      fromDate,
-      toDate,
+      date,
+      startTime,
+      endTime,
       images,
       hourly_price,
     ]

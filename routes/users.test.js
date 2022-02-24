@@ -19,7 +19,7 @@ describe("Get user for the users route works as expected", () => {
     expect(res.statusCode).toBe(200);
   });
 
-  // testing the response body to see it return the actual content
+  // testing the response body check it return the correct content
   test("should return the actual user", async () => {
     const res = await request(app).get("/users");
     // arrange
@@ -29,7 +29,7 @@ describe("Get user for the users route works as expected", () => {
       payload: expect.any(Array),
     };
     // assert
-    console.log(actual, "is the actual");
+    // console.log(actual, "is the actual");
     expect(actual).toEqual(expected);
   });
 
@@ -46,14 +46,24 @@ describe("Get user for the users route works as expected", () => {
 });
 
 // testing the post request
-// test("should post to the users table", async () => {
-//   const data = {
-//     full_name: "Robert Jones",
-//     email: "robertjones@mail.com",
-//     date_of_birth: "1955-05-12",
-//     username: "BobbyJ"
-//   }
-//   await request(app).post("/users").send(data).expect(200).then(async (response) => {
-
-//   })
-// };
+test("should post to the users table", async () => {
+  const data = {
+    full_name: "Robert Jones",
+    email: "robertjones@mail.com",
+    date_of_birth: "1955-05-12",
+    username: "BobbyJ",
+  };
+  await request(app)
+    .post("/users")
+    .send(data)
+    .expect(200)
+    .then(async (response) => {
+      // Check the response
+      // console.log("the response is", response.body.payload[0]);
+      expect(response.body.payload[0].id).toBeTruthy();
+      expect(response.body.payload[0].full_name).toBe(data.full_name);
+      expect(response.body.payload[0].email).toBe(data.email);
+      expect(response.body.payload[0].date_of_birth).toBe(data.date_of_birth);
+      expect(response.body.payload[0].username).toBe(data.username);
+    });
+});

@@ -16,7 +16,7 @@ router.get("/", async function (req, res, next) {
 router.post("/", async function (req, res, next) {
   const { full_name, username, email, date_of_birth } = req.body;
   const newUser = await addUser(full_name, username, email, date_of_birth);
-  console.log("this is", full_name);
+  // console.log("this is", full_name);
   res.json({ success: true, payload: newUser });
 });
 
