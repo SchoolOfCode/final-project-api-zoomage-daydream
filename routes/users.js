@@ -18,6 +18,7 @@ router.get("/:id", async function (req, res, next) {
   const id = Number(req.params.id);
   const user = await getUserByID(id);
 
+  console.log(id);
   res.json({
     success: true,
     payload: user,
