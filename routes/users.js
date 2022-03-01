@@ -1,5 +1,5 @@
 import express from "express";
-import { addUser, getAllUsers } from "../models/users.js";
+import { addUser, getAllUsers, getUserByID } from "../models/users.js";
 
 const router = express.Router();
 
@@ -10,6 +10,17 @@ router.get("/", async function (req, res, next) {
   res.json({
     success: true,
     payload: users,
+  });
+});
+
+// Get user by id
+router.get("/:id", async function (req, res, next) {
+  const id = Number(req.params.id);
+  const user = await getUserByID(id);
+
+  res.json({
+    success: true,
+    payload: user,
   });
 });
 

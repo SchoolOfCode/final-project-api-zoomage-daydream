@@ -5,6 +5,11 @@ export async function getAllUsers() {
   return result.rows;
 }
 
+export async function getUserByID(id) {
+  const result = await db.query(`SELECT * FROM users WHERE id = $1;`, [id]);
+  return result.rows;
+}
+
 // Add user details to user table
 export async function addUser(full_name, username, email, date_of_birth) {
   const result = await db.query(
