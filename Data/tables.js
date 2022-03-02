@@ -129,7 +129,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-02-07T00:00:00.000Z", "2022-02-18T00:00:00.000Z"],
+    date: ["2022-02-07", "2022-02-18"],
     startTime: "09:00",
     endTime: "17:00",
     images: [
@@ -145,7 +145,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -161,7 +161,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -177,7 +177,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -193,7 +193,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -209,7 +209,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -225,7 +225,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -241,7 +241,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -257,7 +257,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -273,7 +273,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -289,7 +289,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -305,7 +305,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -321,7 +321,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -337,7 +337,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -353,7 +353,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -369,7 +369,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -385,7 +385,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -401,7 +401,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -417,7 +417,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
@@ -433,7 +433,7 @@ export const spaces = [
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
-    date: ["2022-03-07T00:00:00.000Z", "2022-03-19T00:00:00.000Z"],
+    date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
     images: [
