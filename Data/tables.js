@@ -125,8 +125,8 @@ export const spaces = [
   {
     address: "12 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
-    fraction_of_space: "private room",
+    purpose_of_space: "Remote Working",
+    fraction_of_space: "Private Room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
     date: ["2022-02-07T00:00:00.000Z", "2022-02-18T00:00:00.000Z"],
@@ -141,7 +141,7 @@ export const spaces = [
   {
     address: "11 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -157,7 +157,7 @@ export const spaces = [
   {
     address: "13 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -173,7 +173,7 @@ export const spaces = [
   {
     address: "15 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -189,7 +189,7 @@ export const spaces = [
   {
     address: "18 Nowhere Road, Liverpool, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -205,7 +205,7 @@ export const spaces = [
   {
     address: "21 Nowhere Road, Liverpool, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -221,7 +221,7 @@ export const spaces = [
   {
     address: "54 Nowhere Road, London, UK",
     type_of_space: "flat",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -237,7 +237,7 @@ export const spaces = [
   {
     address: "71 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -253,7 +253,7 @@ export const spaces = [
   {
     address: "74 Nowhere Road, Cardiff, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -269,7 +269,7 @@ export const spaces = [
   {
     address: "10 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -285,7 +285,7 @@ export const spaces = [
   {
     address: "80 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -301,7 +301,7 @@ export const spaces = [
   {
     address: "67 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -317,7 +317,7 @@ export const spaces = [
   {
     address: "91 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -333,7 +333,7 @@ export const spaces = [
   {
     address: "31 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -349,7 +349,7 @@ export const spaces = [
   {
     address: "74 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -365,7 +365,7 @@ export const spaces = [
   {
     address: "99 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -381,7 +381,7 @@ export const spaces = [
   {
     address: "22 Nowhere Road, London, UK",
     type_of_space: "flat",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -397,7 +397,7 @@ export const spaces = [
   {
     address: "90 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -413,7 +413,7 @@ export const spaces = [
   {
     address: "31 Nowhere Road, Birmingham, UK",
     type_of_space: "flat",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
@@ -429,7 +429,7 @@ export const spaces = [
   {
     address: "19 Nowhere Road, London, UK",
     type_of_space: "house",
-    purpose_of_space: "remote working",
+    purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
     additional_information: "Exceptional view of rolling hills",
