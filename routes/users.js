@@ -1,11 +1,17 @@
 import express from "express";
-import { addUser, getAllUsers, getUserByID } from "../models/users.js";
+import {
+  addUser,
+  getAllUsers,
+  getUserByID,
+  getUserByEmail,
+} from "../models/users.js";
 
 const router = express.Router();
 
 /* GET users listing. */
 router.get("/", async function (req, res, next) {
   const { email } = req.query;
+  console.log(email);
   if (email !== undefined) {
     const user = await getUserByEmail(email);
     res.json({
