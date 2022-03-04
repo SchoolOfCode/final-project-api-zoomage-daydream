@@ -10,6 +10,14 @@ export async function getUserByID(id) {
   return result.rows;
 }
 
+export async function getUserByEmail(email) {
+  const result = await db.query(`SELECT * FROM users WHERE email = $1;`, [
+    email,
+  ]);
+
+  return result.rows;
+}
+
 // Add user details to user table
 export async function addUser(full_name, username, email, date_of_birth) {
   const result = await db.query(

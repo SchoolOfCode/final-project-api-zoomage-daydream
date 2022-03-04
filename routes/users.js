@@ -5,12 +5,21 @@ const router = express.Router();
 
 /* GET users listing. */
 router.get("/", async function (req, res, next) {
-  const users = await getAllUsers();
+  const { email } = req.query;
+  if (email !== undefined) {
+    const user = await getUserByEmail(email);
+    res.json({
+      success: true,
+      payload: user,
+    });
+  } else {
+    const users = await getAllUsers();
 
-  res.json({
-    success: true,
-    payload: users,
-  });
+    res.json({
+      success: true,
+      payload: users,
+    });
+  }
 });
 
 // Get user by id
@@ -23,6 +32,18 @@ router.get("/:id", async function (req, res, next) {
     payload: user,
   });
 });
+
+// Get user by email
+// router.get("/", async function (req, res, next) {
+//   const { email } = req.query;
+//   console.log(email);
+//   const user = await getUserByEmail(email);
+
+//   res.json({
+//     success: true,
+//     payload: user,
+//   });
+// });
 
 router.post("/", async function (req, res, next) {
   const { full_name, username, email, date_of_birth } = req.body;
