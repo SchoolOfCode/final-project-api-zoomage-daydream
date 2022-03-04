@@ -53,6 +53,7 @@ router.get("/:id", async function (req, res, next) {
 
 router.post("/", async function (req, res, next) {
   const { full_name, username, email, date_of_birth } = req.body;
+  console.log(req.body)
   const newUser = await addUser(full_name, username, email, date_of_birth);
 
   res.json({ success: true, payload: newUser });

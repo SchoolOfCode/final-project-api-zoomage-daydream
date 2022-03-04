@@ -1,4 +1,10 @@
+import multer from "multer";
+import cloudinary from "cloudinary";
+
+
+
 import express from "express";
+
 import {
   addSpace,
   getAllSpaces,
@@ -8,7 +14,10 @@ import {
 import { cloudName, apiKey, apiSecret } from "../config.js";
 
 const router = express.Router();
-import cloudinary from "cloudinary";
+const storage = multer.memoryStorage();
+const multerUploads = multer({ storage }).single("image");
+export { multerUploads };
+
 
 cloudinary.config({
   cloud_name: cloudName,
@@ -54,7 +63,8 @@ router.get("/:id", async function (req, res, next) {
 
 
 //POST request
-router.post("/", async function (req, res, next) {
+router.post("/",  multerUploads, async function (req, res, next) {
+
   const {
     address,
     type_of_space,
@@ -68,14 +78,19 @@ router.post("/", async function (req, res, next) {
     images,
     hourly_price,
   } = req.body;
+ 
+
+
 
   const imageURL = [];
   for (let i = 0; i < images.length; i++) {
-    const cloudinaryRes = await cloudinary.uploader.upload(images[i]);
+    const cloudinaryRes = await cloudinary.uploader.upload(images[i].base64);
     imageURL.push(cloudinaryRes.secure_url);
   }
 
-  // console.log(imageURL);
+  console.log(imageURL)
+
+
   const newSpace = await addSpace(
     address,
     type_of_space,
@@ -86,7 +101,7 @@ router.post("/", async function (req, res, next) {
     date,
     startTime,
     endTime,
-    images,
+    imageURL,
     hourly_price
   );
 

@@ -18,7 +18,6 @@ spaces.forEach(async (user) => {
       user.hourly_price,
     ]
   );
-  console.log(response);
 });
 
 db.end();
