@@ -72,14 +72,14 @@ router.post("/",  multerUploads, async function (req, res, next) {
     fraction_of_space,
     amenities,
     additional_information,
-    date,
-    startTime,
-    endTime,
+    // date,
+    // startTime,
+    // endTime,
     images,
-    hourly_price,
+    // hourly_price,
   } = req.body;
  
-
+console.log(req.body)
 
 
   const imageURL = [];
@@ -98,14 +98,14 @@ router.post("/",  multerUploads, async function (req, res, next) {
     fraction_of_space,
     amenities,
     additional_information,
-    date,
-    startTime,
-    endTime,
+    // date,
+    // startTime,
+    // endTime,
     imageURL,
-    hourly_price
+    // hourly_price
   );
 
-  res.json({ success: true, payload: newSpace });
+  // res.json({ success: true, payload: newSpace });
 });
 
 export default router;
