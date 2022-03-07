@@ -54,5 +54,6 @@ export async function addSpace(
       hourly_price,
     ]
   );
+  console.log(result.rows)
   return result.rows;
 }
