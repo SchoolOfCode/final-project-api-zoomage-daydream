@@ -136,8 +136,8 @@ export const spaces = [
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=500",
-      "https://images.pexels.com/photos/154161/pexels-photo-154161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
-      "https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/154161/pexels-photo-154161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 20.0,
   },
@@ -147,7 +147,8 @@ export const spaces = [
     purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
-    additional_information: "Exceptional view of rolling hills",
+    additional_information:
+      "Keep an eye out for the marsh warblers swooping in the undercroft,",
     date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
@@ -156,8 +157,7 @@ export const spaces = [
       "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=500",
       "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=500",
       "https://images.pexels.com/photos/1125136/pexels-photo-1125136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-
+      "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -167,7 +167,7 @@ export const spaces = [
     purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
-    additional_information: "Exceptional view of rolling hills",
+    additional_information: "Well-stocked fridge - help yourself!",
     date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
@@ -176,7 +176,7 @@ export const spaces = [
       "https://images.pexels.com/photos/833045/pexels-photo-833045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1841143/pexels-photo-1841143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -195,7 +195,7 @@ export const spaces = [
       "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/533157/pexels-photo-533157.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/271805/pexels-photo-271805.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/271805/pexels-photo-271805.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -205,7 +205,8 @@ export const spaces = [
     purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
-    additional_information: "Exceptional view of rolling hills",
+    additional_information:
+      "Keep an eye out for the marsh warblers swooping in the undercroft,",
     date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
@@ -214,7 +215,7 @@ export const spaces = [
       "https://images.pexels.com/photos/2442904/pexels-photo-2442904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1863622/pexels-photo-1863622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/939331/pexels-photo-939331.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/1421176/pexels-photo-1421176.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/1421176/pexels-photo-1421176.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -224,7 +225,7 @@ export const spaces = [
     purpose_of_space: "Remote Working",
     fraction_of_space: "private room",
     amenities: ["WiFi", "shower", "fridge"],
-    additional_information: "Exceptional view of rolling hills",
+    additional_information: "Well-stocked fridge - help yourself!",
     date: ["2022-03-07", "2022-03-19"],
     startTime: "07:00",
     endTime: "19:00",
@@ -233,7 +234,7 @@ export const spaces = [
       "https://images.pexels.com/photos/244133/pexels-photo-244133.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/244133/pexels-photo-244133.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/276554/pexels-photo-276554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/633269/pexels-photo-633269.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/633269/pexels-photo-633269.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -252,7 +253,7 @@ export const spaces = [
       "https://images.pexels.com/photos/389819/pexels-photo-389819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/3932930/pexels-photo-3932930.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/2207894/pexels-photo-2207894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/2207894/pexels-photo-2207894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -271,7 +272,7 @@ export const spaces = [
       "https://images.pexels.com/photos/1743227/pexels-photo-1743227.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1776574/pexels-photo-1776574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/378006/pexels-photo-378006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/2883049/pexels-photo-2883049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/2883049/pexels-photo-2883049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -290,7 +291,7 @@ export const spaces = [
       "https://images.pexels.com/photos/3653849/pexels-photo-3653849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2507016/pexels-photo-2507016.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/4825713/pexels-photo-4825713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/265129/pexels-photo-265129.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/265129/pexels-photo-265129.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -309,7 +310,7 @@ export const spaces = [
       "https://images.pexels.com/photos/245219/pexels-photo-245219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/609768/pexels-photo-609768.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/609768/pexels-photo-609768.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -327,8 +328,8 @@ export const spaces = [
       "https://images.pexels.com/photos/942416/pexels-photo-942416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2876787/pexels-photo-2876787.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/271649/pexels-photo-271649.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
-      "https://images.pexels.com/photos/2263510/pexels-photo-2263510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/2263510/pexels-photo-2263510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -346,8 +347,8 @@ export const spaces = [
       "https://images.pexels.com/photos/2659629/pexels-photo-2659629.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2930894/pexels-photo-2930894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/3992776/pexels-photo-3992776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/2986011/pexels-photo-2986011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
-      "https://images.pexels.com/photos/1046639/pexels-photo-1046639.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/2986011/pexels-photo-2986011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/1046639/pexels-photo-1046639.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -366,7 +367,7 @@ export const spaces = [
       "https://images.pexels.com/photos/3952034/pexels-photo-3952034.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2736139/pexels-photo-2736139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/1008692/pexels-photo-1008692.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/1008692/pexels-photo-1008692.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -385,7 +386,7 @@ export const spaces = [
       "https://images.pexels.com/photos/6204262/pexels-photo-6204262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/3044536/pexels-photo-3044536.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/159839/office-home-house-desk-159839.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "https://images.pexels.com/photos/3952038/pexels-photo-3952038.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "https://images.pexels.com/photos/3952038/pexels-photo-3952038.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     hourly_price: 30.0,
   },
@@ -404,7 +405,7 @@ export const spaces = [
       "https://images.pexels.com/photos/6312362/pexels-photo-6312362.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "",
-      ""
+      "",
     ],
     hourly_price: 30.0,
   },
