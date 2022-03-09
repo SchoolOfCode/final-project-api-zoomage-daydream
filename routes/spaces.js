@@ -1,8 +1,6 @@
 import multer from "multer";
 import cloudinary from "cloudinary";
 
-
-
 import express from "express";
 
 import {
@@ -10,6 +8,7 @@ import {
   getAllSpaces,
   getSpaceByID,
   getSpaceBySearch,
+  getSpaceByEmail
 } from "../models/spaces.js";
 import { cloudName, apiKey, apiSecret } from "../config.js";
 
@@ -18,54 +17,55 @@ const storage = multer.memoryStorage();
 const multerUploads = multer({ storage }).single("image");
 export { multerUploads };
 
-
 cloudinary.config({
   cloud_name: cloudName,
   api_key: apiKey,
-  api_secret: apiSecret,
-});
+  api_secret: apiSecret
+}); 
 
 /* GET all spaces */
 router.get("/", async function (req, res) {
-    const { address, type_of_space} = req.query;
-  if(address!==undefined&&type_of_space!==undefined){ 
-    
-     const space = await getSpaceBySearch(
-    address,
-    type_of_space,
-  )
-
- 
- res.json({
-    success: true,
-    payload: space,
-  })
-}
-
-else{const spaces = await getAllSpaces();
-  res.json({
-    success: true,
-    payload: spaces,
-  });}
+  const { address, type_of_space, email } = req.query;
   
-});
-// GET spaces by ID
+  if (address !== undefined && type_of_space !== undefined) {
+    const space = await getSpaceBySearch(address, type_of_space);
 
+    res.json({
+      success: true,
+      payload: space
+    });
+  } else if (email !== undefined) {
+    const space = await getSpaceByEmail(email);
+
+    res.json({
+      success: true,
+      payload: space
+    });
+  } else {
+    const spaces = await getAllSpaces();
+    res.json({
+      success: true,
+      payload: spaces
+    });
+  }
+});
+
+
+// GET spaces by ID
 router.get("/:id", async function (req, res, next) {
   const id = Number(req.params.id);
   const space = await getSpaceByID(id);
 
   res.json({
     success: true,
-    payload: space,
+    payload: space
   });
 });
 
-
 //POST request
-router.post("/",  multerUploads, async function (req, res, next) {
-
-  const {email,
+router.post("/", multerUploads, async function (req, res, next) {
+  const {
+    email,
     address,
     type_of_space,
     purpose_of_space,
@@ -76,11 +76,10 @@ router.post("/",  multerUploads, async function (req, res, next) {
     startTime,
     endTime,
     images,
-    hourly_price,
+    hourly_price
   } = req.body;
- 
 
-console.log(req.body)
+  console.log(req.body);
 
   const imageURL = [];
   for (let i = 0; i < images.length; i++) {
@@ -88,10 +87,7 @@ console.log(req.body)
     imageURL.push(cloudinaryRes.secure_url);
   }
 
-
-
-
-const newSpace = await addSpace(
+  const newSpace = await addSpace(
     email,
     address,
     type_of_space,
@@ -103,12 +99,10 @@ const newSpace = await addSpace(
     startTime,
     endTime,
     imageURL,
-    hourly_price,
+    hourly_price
   );
 
   res.json({ success: true, payload: newSpace });
-
-   
 });
 
 export default router;
