@@ -65,22 +65,22 @@ router.get("/:id", async function (req, res, next) {
 //POST request
 router.post("/",  multerUploads, async function (req, res, next) {
 
-  const {
+  const {email,
     address,
     type_of_space,
     purpose_of_space,
     fraction_of_space,
     amenities,
     additional_information,
-    // date,
-    // startTime,
-    // endTime,
+    date,
+    startTime,
+    endTime,
     images,
-    // hourly_price,
+    hourly_price,
   } = req.body;
  
-console.log(req.body)
 
+console.log(req.body)
 
   const imageURL = [];
   for (let i = 0; i < images.length; i++) {
@@ -88,24 +88,27 @@ console.log(req.body)
     imageURL.push(cloudinaryRes.secure_url);
   }
 
-  console.log(imageURL)
 
 
-  const newSpace = await addSpace(
+
+const newSpace = await addSpace(
+    email,
     address,
     type_of_space,
     purpose_of_space,
     fraction_of_space,
     amenities,
     additional_information,
-    // date,
-    // startTime,
-    // endTime,
+    date,
+    startTime,
+    endTime,
     imageURL,
-    // hourly_price
+    hourly_price,
   );
 
-  // res.json({ success: true, payload: newSpace });
+  res.json({ success: true, payload: newSpace });
+
+   
 });
 
 export default router;

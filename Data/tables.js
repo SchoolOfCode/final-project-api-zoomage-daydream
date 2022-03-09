@@ -123,6 +123,7 @@ export const users = [
 
 export const spaces = [
   {
+    email: "constricted@gmail.com",
     address: "12 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -142,6 +143,7 @@ export const spaces = [
     hourly_price: 20.0,
   },
   {
+     email: "Oleg@gmail.com",
     address: "11 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -162,6 +164,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "pen@gmail.com",
     address: "13 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -181,6 +184,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+     email: "DrEggman@gmail.com",
     address: "15 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -200,6 +204,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+     email: "ayomide@gmail.com",
     address: "18 Nowhere Road, Liverpool, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -219,6 +224,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "wayne@gmail.com",
     address: "21 Nowhere Road, Liverpool, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -238,6 +244,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+     email: "wayne@gmail.com",
     address: "54 Nowhere Road, London, UK",
     type_of_space: "flat",
     purpose_of_space: "Remote Working",
@@ -257,6 +264,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+        email: "CX@gmail.com",
     address: "71 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -276,6 +284,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+        email: "CX@gmail.com",
     address: "74 Nowhere Road, Cardiff, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -295,6 +304,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "ss@gmail.com",
     address: "10 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -314,6 +324,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "ss@gmail.com",
     address: "80 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -333,6 +344,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "kaz-a@gmail.com",
     address: "67 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -352,6 +364,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "kaz-a@gmail.com",
     address: "91 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -371,6 +384,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "kaz-a@gmail.com",
     address: "31 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -390,6 +404,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "kazpa@gmail.com",
     address: "74 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -409,6 +424,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "kz-a@gmail.com",
     address: "99 Nowhere Road, Birmingham, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
@@ -424,7 +440,7 @@ export const spaces = [
     ],
     hourly_price: 30.0,
   },
-  {
+  {email: "az-a@gmail.com",
     address: "22 Nowhere Road, London, UK",
     type_of_space: "flat",
     purpose_of_space: "Remote Working",
@@ -457,6 +473,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "k-a@gmail.com",
     address: "31 Nowhere Road, Birmingham, UK",
     type_of_space: "flat",
     purpose_of_space: "Remote Working",
@@ -473,6 +490,7 @@ export const spaces = [
     hourly_price: 30.0,
   },
   {
+    email: "k-a@gmail.com",
     address: "19 Nowhere Road, London, UK",
     type_of_space: "house",
     purpose_of_space: "Remote Working",
