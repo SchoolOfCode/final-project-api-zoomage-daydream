@@ -159,7 +159,7 @@ export const spaces = [
       "https://images.pexels.com/photos/1125136/pexels-photo-1125136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
-    hourly_price: 30.0,
+    hourly_price: 40.0,
   },
   {
     address: "13 Nowhere Road, London, UK",
@@ -178,7 +178,7 @@ export const spaces = [
       "https://images.pexels.com/photos/1841143/pexels-photo-1841143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
-    hourly_price: 30.0,
+    hourly_price: 35.0,
   },
   {
     address: "15 Nowhere Road, London, UK",
@@ -197,7 +197,7 @@ export const spaces = [
       "https://images.pexels.com/photos/533157/pexels-photo-533157.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/271805/pexels-photo-271805.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
-    hourly_price: 30.0,
+    hourly_price: 32.0,
   },
   {
     address: "18 Nowhere Road, Liverpool, UK",
@@ -236,7 +236,7 @@ export const spaces = [
       "https://images.pexels.com/photos/276554/pexels-photo-276554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/633269/pexels-photo-633269.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
-    hourly_price: 30.0,
+    hourly_price: 38.0,
   },
   {
     address: "54 Nowhere Road, London, UK",
@@ -255,7 +255,7 @@ export const spaces = [
       "https://images.pexels.com/photos/3932930/pexels-photo-3932930.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "https://images.pexels.com/photos/2207894/pexels-photo-2207894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
-    hourly_price: 30.0,
+    hourly_price: 25.0,
   },
   {
     address: "71 Nowhere Road, London, UK",
