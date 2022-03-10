@@ -44,7 +44,7 @@ describe("Testing that spaces route is working as expected", () => {
   test("Should return the actual payload", async () => {
     const res = await request(app).get("/spaces");
     //arrange
-    const actual = res.body;
+    const actual = res.body; 
     actual.payload.forEach((item) => {
       //assert
       expect(item).toEqual(space);
