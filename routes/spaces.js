@@ -21,12 +21,12 @@ cloudinary.config({
   cloud_name: cloudName,
   api_key: apiKey,
   api_secret: apiSecret
-}); 
+});
 
 /* GET all spaces */
 router.get("/", async function (req, res) {
   const { address, type_of_space, email } = req.query;
-  
+
   if (address !== undefined && type_of_space !== undefined) {
     const space = await getSpaceBySearch(address, type_of_space);
 
@@ -49,7 +49,6 @@ router.get("/", async function (req, res) {
     });
   }
 });
-
 
 // GET spaces by ID
 router.get("/:id", async function (req, res, next) {
