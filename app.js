@@ -37,7 +37,7 @@ const app = express();
 // });
 
 app.use(logger("dev"));
-app.use(cors({ origin: false }));
+app.use(cors({ origin: "*"}));
 app.use(express.json({ limit: "100mb" }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
