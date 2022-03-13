@@ -1,5 +1,6 @@
 import multer from "multer";
 import cloudinary from "cloudinary";
+import cors from "cors";
 
 import express from "express";
 
@@ -62,8 +63,7 @@ router.get("/:id", async function (req, res, next) {
 });
 
 //POST request
-router.post("/", async function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+router.post("/", cors(), async function (req, res) {
   const {
     email,
     address,
@@ -78,8 +78,6 @@ router.post("/", async function (req, res, next) {
     images,
     hourly_price
   } = req.body;
-
-  console.log(req.body);
 
   const imageURL = [];
   for (let i = 0; i < images.length; i++) {

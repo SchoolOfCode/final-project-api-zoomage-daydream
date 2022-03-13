@@ -22,10 +22,10 @@ export async function getSpaceBySearch(location, type) {
 
 // get space bt email
 export async function getSpaceByEmail(email) {
-  const result = await db.query(
-    `SELECT * FROM spaces WHERE email = $1`,[email]
-  );
-  console.log(result.rows)
+  const result = await db.query(`SELECT * FROM spaces WHERE email = $1`, [
+    email
+  ]);
+  console.log(result.rows);
   return result.rows;
 }
 
@@ -44,7 +44,6 @@ export async function addSpace(
   imageURL,
   hourly_price
 ) {
-
   const result = await db.query(
     `INSERT INTO spaces (email,address, type_of_space, purpose_of_space, fraction_of_space, amenities, additional_information, date, startTime, endTime, images, hourly_price) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11,$12) RETURNING *;`,
     [
@@ -62,6 +61,6 @@ export async function addSpace(
       hourly_price
     ]
   );
-  console.log(result)
+  console.log(result);
   return result.rows;
 }
