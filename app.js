@@ -12,7 +12,7 @@ import spacesRouter from "./routes/spaces.js";
 const app = express();
 
 app.use(logger("dev"));
-app.use(cors());
+app.use(cors({origin:"*"}));
 app.use("d", (req,res)=>{
 req.set('Access-Control-Allow-Origin', '*')
 res.set('Access-Control-Allow-Origin', '*')
