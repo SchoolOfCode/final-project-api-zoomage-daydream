@@ -11,9 +11,12 @@ import spacesRouter from "./routes/spaces.js";
 
 const app = express();
 
-import cloudinary from "cloudinary";
 app.use(logger("dev"));
 app.use(cors());
+app.use("d", (req,res)=>{
+req.set('Access-Control-Allow-Origin', '*')
+res.set('Access-Control-Allow-Origin', '*')
+})
 app.use(express.json({ limit: "100mb" }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
