@@ -62,7 +62,8 @@ router.get("/:id", async function (req, res, next) {
 });
 
 //POST request
-router.post("/", multerUploads, async function (req, res, next) {
+router.post("/", async function (req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   const {
     email,
     address,
