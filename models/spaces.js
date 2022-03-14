@@ -12,10 +12,10 @@ export async function getSpaceByID(id) {
 }
 
 // More specific search for a space, to be used on the reserve on home page
-export async function getSpaceBySearch(location, type) {
+export async function getSpaceBySearch(location, purpose) {
   const result = await db.query(
-    `SELECT * FROM spaces WHERE address ILIKE '%' || $1 || '%' AND  type_of_space = $2`,
-    [location, type]
+    `SELECT * FROM spaces WHERE address ILIKE '%' || $1 || '%' AND purpose_of_space ILIKE '%' || $2 || '%'`,
+    [location, purpose]
   );
   return result.rows;
 }
