@@ -26,10 +26,10 @@ cloudinary.config({
 
 /* GET all spaces */
 router.get("/", async function (req, res) {
-  const { address, type_of_space, email } = req.query;
+  const { address, purpose_of_space, email } = req.query;
 
-  if (address !== undefined && type_of_space !== undefined) {
-    const space = await getSpaceBySearch(address, type_of_space);
+  if (address !== undefined && purpose_of_space !== undefined) {
+    const space = await getSpaceBySearch(address, purpose_of_space);
 
     res.json({
       success: true,
