@@ -25,7 +25,6 @@ export async function getSpaceByEmail(email) {
   const result = await db.query(`SELECT * FROM spaces WHERE email = $1`, [
     email
   ]);
-  console.log(result.rows);
   return result.rows;
 }
 

@@ -1,6 +1,5 @@
 import multer from "multer";
 import cloudinary from "cloudinary";
-import cors from "cors";
 
 import express from "express";
 
@@ -11,6 +10,7 @@ import {
   getSpaceBySearch,
   getSpaceByEmail
 } from "../models/spaces.js";
+
 import { cloudName, apiKey, apiSecret } from "../config.js";
 
 const router = express.Router();
@@ -63,7 +63,7 @@ router.get("/:id", async function (req, res, next) {
 });
 
 //POST request
-router.post("/", cors(), async function (req, res) {
+router.post("/", async function (req, res) {
   const {
     email,
     address,
@@ -80,11 +80,12 @@ router.post("/", cors(), async function (req, res) {
   } = req.body;
 
   const imageURL = [];
+
   for (let i = 0; i < images.length; i++) {
     const cloudinaryRes = await cloudinary.uploader.upload(images[i].base64);
     imageURL.push(cloudinaryRes.secure_url);
   }
-
+  
   const newSpace = await addSpace(
     email,
     address,
